@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BudgetMos/static/css/main.181275a7.css",
-    "main.js": "/BudgetMos/static/js/main.e1412c13.js",
+    "main.js": "/BudgetMos/static/js/main.24973d85.js",
     "static/js/787.28cb0dcd.chunk.js": "/BudgetMos/static/js/787.28cb0dcd.chunk.js",
     "static/media/img1.svg": "/BudgetMos/static/media/img1.ca9738930cb18f14b2f82e4d3a1c8707.svg",
     "static/media/DesktopBg.svg": "/BudgetMos/static/media/DesktopBg.55037e42287b2734d72f.svg",
@@ -11,11 +11,11 @@
     "static/media/nacia.svg": "/BudgetMos/static/media/nacia.225bf6bc225e2f7398f747656153c338.svg",
     "index.html": "/BudgetMos/index.html",
     "main.181275a7.css.map": "/BudgetMos/static/css/main.181275a7.css.map",
-    "main.e1412c13.js.map": "/BudgetMos/static/js/main.e1412c13.js.map",
+    "main.24973d85.js.map": "/BudgetMos/static/js/main.24973d85.js.map",
     "787.28cb0dcd.chunk.js.map": "/BudgetMos/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.181275a7.css",
-    "static/js/main.e1412c13.js"
+    "static/js/main.24973d85.js"
   ]
 }
