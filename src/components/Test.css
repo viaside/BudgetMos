@@ -1,0 +1,95 @@
+﻿.pad {
+    padding-top: 10%;
+    background-image: url("../Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 975px;
+}
+
+.pad-contact{
+    padding-top: 130px;
+    background-image: url("../Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 320px;
+}
+
+.padMob{
+    padding-top: 350px;
+    background-image: url("../Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 975px;  
+}
+.padMob2{
+    padding-top: 150px;
+    background-image: url("../Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 975px;  
+}
+
+.text-main{
+    color: rgb(190, 208, 241);
+    text-decoration: none;
+}
+
+.black{
+    background-color: white;
+    color: rgb(142, 157, 231);
+}   
+
+.black h1{
+    color: rgb(171, 180, 228);
+}
+
+.blue{
+    background-color: rgb(142, 157, 231);
+    color: white;
+}
+
+.block{
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+.desktop {
+    font-size: 25px;
+}
+
+.mobile {
+    font-size: 20px;
+}
+
+.border{
+    border: 0px;
+    border-radius: 0px;
+    border-style:solid;
+}
+
+.bord1{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(142, 157, 231);
+    color: white;
+}
+
+.bord1:hover{
+    color: whitesmoke;
+}
+.bord2{
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(142, 157, 231);
+    background-color: white;
+}
+
+.bord2:hover{
+    color: rgb(142, 157, 231);
+    
+}
