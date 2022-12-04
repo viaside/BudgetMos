@@ -40,12 +40,11 @@ export class NavMenu extends Component {
     render() {
             return (
                 <header id="header" className="navbar-outer navbar-expand-lg  fixed-top">
-                    <Navbar className="container-fluid navbar-inner " container light>
-                        <NavbarBrand tag={Link} to="/"><img src={favicon} alt="" width={50} height={50}/></NavbarBrand>
+                    <Navbar className="container-fluid navbar-inner text-bold" container light>
                         <div className="flex-grow-1">
-                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <NavLink tag={Link} className="text-main" to="/">Бюджет</NavLink>
-                                <NavLink tag={Link} className="text-main" to="/Test">Роль бюджета</NavLink>
+                                <NavLink tag={Link} className="text-main" to="/Test">Направления</NavLink>
                             </ul>
                         </div>
                         <div className="flex-grow-2 ">

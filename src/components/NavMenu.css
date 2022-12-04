@@ -6,15 +6,15 @@
 }
 
 a.navbar-brand:hover{
-    color: rgb(167, 182, 211);
+    color: rgb(142, 157, 231);;
 }
 
 a.nav-link:hover{
-    color: rgb(167, 182, 211);
+    color: rgb(142, 157, 231);;
 }
 
 a.nav-link:visited{
-    color: rgb(190, 208, 241);
+    color: rgb(142, 157, 231);;
 }
 
 
@@ -41,31 +41,4 @@ a.nav-link:visited{
 .scroll_navbar .navbar {
     background-color: rgba(163, 183, 236, 0.281);
 }
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-.flex-grow-2 {
-    flex-grow: 100;
-    white-space: normal;
-    text-align: right;
-    word-break: break-all;
-}
-
-.flex-grow-1 {
-    flex-grow: 1;
-}
-
-.bg-glass {
-    background-color: hsla(0, 0%, 100%, 0.9) !important;
-    backdrop-filter: saturate(200%) blur(25px);
-}
-
-
-
-.d {
-    background-color: rgba(59, 5, 68, .5)
-}
-
 

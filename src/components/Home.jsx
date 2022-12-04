@@ -1,198 +1,176 @@
+import React, { Component} from 'react';
 import MediaQuery from 'react-responsive'
-import React, { Component } from 'react';
-import {  } from 'reactstrap';
+import Fade from 'react-reveal/Fade';
 import Carousel from 'react-elastic-carousel'
-import '../App.css';
 import img1 from '../Images/img1.svg';
 import med from '../Images/med.svg';
 import nac from '../Images/nacia.svg'
 import plan from '../Images/PLANNING.svg'
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
+const CarouselItems = [
+    { id: 1, img: med, title: 'Здравоохранение', text: "381,6 млрд рублей" },
+    { id: 2, img: nac, title: 'Национальная экономика', text: "1042,6 млрд рублей" },
+    { id: 3, img: img1, title: 'Социальная политика', text: "551,8 млрд рублей" },
+    { id: 4, img: img1, title: 'Образование', text: "479,7 млрд рублей" },
+    { id: 5, img: img1, title: 'Физическая культура и спорт', text: "68,0 млрд рублей" }
+];
 
-        var minOffset = 750;
-        window.addEventListener('scroll', function () {
-            window.onscroll = function () {
-                let has_class = document.body.classList.contains("scroll_navbar");
+const AnimatedListItems = [
+    { id: 1, img: img1, title: 'БЮДЖЕТНАЯ КЛАССИФИКАЦИЯ', text: "Бюджетная классификация Российской Федерации является группировкой доходов, расходов и источников финансирования дефицитов бюджетов бюджетной системы Российской Федерации, используемой для составления и исполнения бюджетов, а также группировкой доходов, расходов и источников финансирования дефицитов бюджетов и (или) операций сектора государственного управления, используемой для ведения бюджетного (бухгалтерского) учета, составления бюджетной (бухгалтерской) и иной финансовой отчетности, обеспечивающей сопоставимость показателей бюджетов бюджетной системы Российской Федерации." },
+    { id: 2, img: plan, title: 'ПЛАНИРОВАНИЕ БЮДЖЕТА', text: (<>
+        <p>Решение о начале работы над  составлением  проекта  бюджета принимает Премьер Правительства Москвы   в   соответствии   с нормативными актами, определяющими  особенности  бюджетной  системы Российской Федерации в планируемом бюджетном году. <br/> Далее Правительство Москвы готовит проект бюджетного  послания  и представляет его Мэру Москвы. Бюджетное  послание  Мэра  Москвы  Московской  городской  Думе включает в себя: </p>
+        <ul>
+            <li>оценку  исполнения  бюджета   предшествующего и текущего финансовых годов; </li>
+            <li>прогноз   основных   показателей    социально-экономического положения Москвы в соответствующий период; </li>
+            <li>основные приоритеты бюджетной политики Москвы в  наступающем финансовом году; </li>
+            <li>сведения о прогнозируемых доходах бюджета Москвы; </li>
+            <li>проект бюджета Москвы.</li>
+        </ul>
+     </>)},
+];
 
-                if (minOffset < document.documentElement.scrollTop) {
-                    if (!has_class) {
-                    }
-                } else if (has_class) {
-                }
-            }
-        });
-        }
+const animateListDesktop = [
+    { id: 1, Text:  
+    <span>
+    <div id='carousel'>
+        <h1 className='vam font-weight-bold display-1'>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТЫ</h1>
+        <Carousel className="styling-example p-5" itemsToShow={1}>
+            {CarouselItems.map((item, key) => (
+                <div className="Item" key={key}>
+                    <p><img src={ item.img } alt=""></img></p>
+                    <p><b>{ item.title }</b></p>
+                    <p>{ item.text }</p>
+                </div>
+            ))}
+        </Carousel> 
+    </div>
+    </span>, Bg: 'white'},
+    { id: 2, Text: 
+    <span className='block d-flex'>
+        <div className="p-5">
+            <img src={ AnimatedListItems[0].img } alt="" height="355px" width="355px"/>
+        </div>
+        <div className='p-5 desktop'>
+            <h1 className='font-weight-bold display-1'>{ AnimatedListItems[0].title }</h1>
+            <p/>{ AnimatedListItems[0].text }<p/>
+        </div>
+    </span>, Bg: 'blue'},
+        { id: 3, Text: 
+            <span className='block d-flex'>
+                <div className='p-5 desktop'>
+                    <h1 className='font-weight-bold display-1'>{ AnimatedListItems[1].title }</h1>
+                    <p/>{ AnimatedListItems[1].text }<p/>
+                </div>
+                <div className="p-5">
+                    <img src={ AnimatedListItems[1].img } alt="" height="355px" width="355px"/>
+                </div>
+            </span>, Bg: 'white'},
+];
 
+const animateListMobile = [
+    { id: 1, Text:
+    <span >
+    <div className='paddingLR'>
+        <h1 className='font-weight-bold vam'><b>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТЫ</b></h1>
+        <Carousel className="styling-example-mobile" itemsToShow={1}>
+            {CarouselItems.map((item, key) => (
+                <div className="ItemMobile" key={key}>
+                    <p><img src={ item.img } alt=""></img></p>
+                    <p><b>{ item.title }</b></p>
+                    <p>{ item.text }</p>
+                </div>
+            ))}
+        </Carousel> 
+    </div>
+    </span>, Bg: 'white'},
+    { id: 2, Text: 
+    <span className=''>
+        <div>
+            <img src={ AnimatedListItems[0].img } alt="" height="200px" width="200px" />
+        </div>
+        <div className='mobile'>
+            <h1 className='font-weight-bold display-1'>{ AnimatedListItems[0].title }</h1>
+            <p className='smallFont'>{ AnimatedListItems[0].text }</p>
+        </div>
+    </span>, Bg: 'blue'},
+    { id: 3, Text: 
+        <span className=''>
+            <div>
+                <img src={ AnimatedListItems[1].img } alt="" height="200px" width="200px" />
+            </div>
+            <div className='mobile'>
+                <h1 className='font-weight-bold '>{ AnimatedListItems[1].title }</h1>
+                <p className='verySmallFont'>{ AnimatedListItems[1].text }</p>
+            </div>
+        </span>, Bg: 'white'},
+];
+
+export default class Home extends Component {
     render() {
-
         return (
-            <div className="Home desktop">
-                <MediaQuery minWidth={12} maxWidth={999} >
-                    <div className="padMob border">
-                        <div className="text-center text-main animated fadeInUp">
-                            <h1>
-                                <h1 className='display-1'><b>Бюджет</b></h1>
-                                <p>
-                                    <br/>форма образования и расходования 
-                                    <br/>денежных средств, предназначенных для
-                                    <br/>финансового обеспечения задач и функций 
-                                    <br/>местного самоуправления
-                                </p>
-                            </h1>
-                        </div>
-                    </div>
-                </MediaQuery>
-                <MediaQuery minWidth={1000}>
-                    <div className="pad border">
-                        <div className="text-center text-main animated fadeInUp">
-                            <h1>
-                                <h1 className='display-1'><b>Бюджет</b></h1>
-                                <p>
-                                    <br/>форма образования и расходования 
-                                    <br/>денежных средств, предназначенных для
-                                    <br/>финансового обеспечения задач и функций 
-                                    <br/>местного самоуправления
-                                </p>
-                            </h1>
-                        </div>
-                    </div>
-                </MediaQuery>
-                <div className="text-dark">
-                    <div>
-                        <div className="black text-main p-5">
-                            <div className="d-flex align-middle container">
-                                <MediaQuery minWidth={12} maxWidth={999} >
-                                    <span className="align-middle d-flex flex-column">
-                                        <img height="130px" width="130px" className="p-2" src={img1} alt="girl"></img>
-                                        <div className='desktop'>
-                                            <h1 className='display-2'>Бюджет</h1>
-                                            <p>форма образования и расходования денежных средств</p>
-                                        </div>
-                                    </span>
-                                </MediaQuery>
-                                <MediaQuery minWidth={1000}>
-                                    <span className="align-middle d-flex">
-                                        <img height="250px" width="250px" className="p-2" src={img1} alt="girl"></img>
-                                        <div className='desktop'>
-                                            <h1 className='display-2'>Бюджет</h1>
-                                            <p>форма образования и расходования денежных средств</p>
-                                        </div>
-                                    </span>
-                                </MediaQuery>
-                            </div>
-                        </div>
+            <div className="Home">
+            {/* mobile */}
+            <MediaQuery minWidth={12} maxWidth={999} >
+                <div className="padMob2 border" >
+                    <div className="text-center text-main animated fadeInUp ">
+                        <h1 className='display-4 p-4'><b>БЮДЖЕТ</b></h1>
+                        <h1 className='paddingLR'>
+                        форма образования и расходования 
+                        денежных средств, предназначенных 
+                        для финансового обеспечения задач 
+                        и функций государства и местного самоуправления.
+                        </h1>
                     </div>
                 </div>
-
-                <div className="blue text-center p-5 text-main ">
-
-                    <h1 className='display-4'>
-                        Направления расохдов бюджета города москвы
-                    </h1>
-
-                    <MediaQuery minWidth={12} maxWidth={999} >
-                        {/* mobile */}
-                        <Carousel className="styling-example mobile-c" itemsToShow={1}>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={med} alt="girl"></img>
-                                <h4>Здравоохранение</h4>
-                                <p>381,6 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={nac} alt="girl"></img>
-                                <h4>Национальная экономика</h4>
-                                <p>1042,6 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h4>Социальная политика</h4>
-                                <p>551,8 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h4>Образование</h4>
-                                <p>479,7 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h4>Физическая культура и спорт</h4>
-                                <p>68,0 млрд рублей</p>
-                            </div>
-                        </Carousel>
-                    </MediaQuery>
-
-                    <MediaQuery minWidth={1000}>
-                        {/* Desktop */}
-                        <Carousel className="styling-example desktop" itemsToShow={1}>
-                            <div className="Item desktop">
-                                <img height="200px" width="200px" className="p-2" src={med} alt="girl"></img>
-                                <h1>Здравоохранение</h1>
-                                <p>381,6 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={nac} alt="girl"></img>
-                                <h1>Национальная экономика</h1>
-                                <p>1042,6 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h1>Социальная политика</h1>
-                                <p>551,8 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h1>Образование</h1>
-                                <p>479,7 млрд рублей</p>
-                            </div>
-                            <div className="Item">
-                                <img height="200px" width="200px" className="p-2" src={img1} alt="girl"></img>
-                                <h1>Физическая культура и спорт</h1>
-                                <p>68,0 млрд рублей</p>
-                            </div>
-                        </Carousel>
-                    </MediaQuery>
+                {animateListMobile.map((item, key) => (
+                <div style={styles.block} className={item.Bg} key={key}>
+                <Fade bottom big >
+                    <div className='blockMobile mobile d-flex'>
+                        {item.Text}
+                    </div>
+                </Fade>
                 </div>
+                ))}
+            </MediaQuery>
 
-                <div>
-                    <div className="black text-main p-5">
-                        <div className="d-flex align-middle container">
-                            <MediaQuery minWidth={12} maxWidth={999}>
-                                <span className="align-middle d-flex flex-column">
-                                    <div>
-                                        <h1 className='display-4'>БЮДЖЕТНАЯ СИСТЕМА РФ</h1>
-                                        <p>Основанная на экономических отношениях и государственном устройстве Российской Федерации, регулируемая законодательством Российской Федерации совокупность федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов и бюджетов государственных внебюджетных фондов</p>
-                                    </div>
-                                   <img height="250px" width="250px" className="p-2" src={plan} alt="girl"></img>
-                                </span>
-                            </MediaQuery>
-                            <MediaQuery minWidth={1000}>
-                                <span className="align-middle d-flex">
-                                    <div>
-                                        <h1 className='display-4'>БЮДЖЕТНАЯ СИСТЕМА РФ</h1>
-                                        <p>Основанная на экономических отношениях и государственном устройстве Российской Федерации, регулируемая законодательством Российской Федерации совокупность федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов и бюджетов государственных внебюджетных фондов</p>
-                                    </div>
-                                    <img height="250px" width="250px" className="p-2" src={plan} alt="girl"></img>
-                                </span>
-                            </MediaQuery>
-                        </div>
+            {/* desktop */}
+            <MediaQuery minWidth={1000}>
+                <div className="pad border">
+                    <div className="text-center text-main animated fadeInUp">
+                        <h1 className='display-1 font-weight-bold p-5'>БЮДЖЕТ</h1>
+                        <h1 className=''>
+                        форма образования и расходования <br/>
+                        денежных средств, предназначенных <br/>
+                        для финансового обеспечения задач <br/>
+                        и функций государства <br/>
+                        и местного самоуправления.
+                        </h1>
                     </div>
                 </div>
-                <div className="text-main blue">
-                    <div className="container p-5">
-                        <span className="align-middle d-flex text-center">
-                            <div>
-                                <h1 className='display-4'>БЮДЖЕТНАЯ КЛАССИФИКАЦИЯ</h1>
-                                <p>Бюджетная классификация Российской Федерации является группировкой доходов, расходов и источников финансирования дефицитов бюджетов бюджетной системы Российской Федерации, используемой для составления и исполнения бюджетов, а также группировкой доходов, расходов и источников финансирования дефицитов бюджетов и (или) операций сектора государственного управления, используемой для ведения бюджетного (бухгалтерского) учета, составления бюджетной (бухгалтерской) и иной финансовой отчетности, обеспечивающей сопоставимость показателей бюджетов бюджетной системы Российской Федерации</p>
-                            </div>
-                        </span>
+                {animateListDesktop.map((item, key) => (
+                <div style={styles.block} className={item.Bg} key={key}>
+                    <Fade bottom big >
+                    <div className='block desktop paddingLR'>
+                        {item.Text}
                     </div>
+                    </Fade>
                 </div>
+                ))}
+            </MediaQuery>
             </div>
         );
     }
 }
 
-export default Home;
+const styles = {
+    block: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        height: '100vh',
+        borderBottom: '1px solid rgba(255,255,255,.2)',
+        minWidth: '100%',
+        minHeight: '100%'
+    }
+};
