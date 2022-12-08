@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BudgetMos/static/css/main.ecaa98ae.css",
-    "main.js": "/BudgetMos/static/js/main.84f03913.js",
+    "main.css": "/BudgetMos/static/css/main.843d4b88.css",
+    "main.js": "/BudgetMos/static/js/main.bc561fa5.js",
     "static/js/787.28cb0dcd.chunk.js": "/BudgetMos/static/js/787.28cb0dcd.chunk.js",
     "static/media/img1.svg": "/BudgetMos/static/media/img1.ca9738930cb18f14b2f82e4d3a1c8707.svg",
     "static/media/DesktopBg.svg": "/BudgetMos/static/media/DesktopBg.55037e42287b2734d72f.svg",
@@ -10,12 +10,12 @@
     "static/media/med.svg": "/BudgetMos/static/media/med.5574e821ddfb559f8be8a6352fab24aa.svg",
     "static/media/nacia.svg": "/BudgetMos/static/media/nacia.225bf6bc225e2f7398f747656153c338.svg",
     "index.html": "/BudgetMos/index.html",
-    "main.ecaa98ae.css.map": "/BudgetMos/static/css/main.ecaa98ae.css.map",
-    "main.84f03913.js.map": "/BudgetMos/static/js/main.84f03913.js.map",
+    "main.843d4b88.css.map": "/BudgetMos/static/css/main.843d4b88.css.map",
+    "main.bc561fa5.js.map": "/BudgetMos/static/js/main.bc561fa5.js.map",
     "787.28cb0dcd.chunk.js.map": "/BudgetMos/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecaa98ae.css",
-    "static/js/main.84f03913.js"
+    "static/css/main.843d4b88.css",
+    "static/js/main.bc561fa5.js"
   ]
 }
