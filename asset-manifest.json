@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BudgetMos/static/css/main.e8d451ce.css",
-    "main.js": "/BudgetMos/static/js/main.a3f14db9.js",
+    "main.js": "/BudgetMos/static/js/main.23929418.js",
     "static/js/787.28cb0dcd.chunk.js": "/BudgetMos/static/js/787.28cb0dcd.chunk.js",
     "static/media/stud.svg": "/BudgetMos/static/media/stud.63b3237980e1cf0680eaafb769c1af90.svg",
     "static/media/budget.svg": "/BudgetMos/static/media/budget.56a6c7f140a1dfe04e316073cddb61a1.svg",
@@ -12,11 +12,11 @@
     "static/media/soc.svg": "/BudgetMos/static/media/soc.8e554ef98a85da5813fc383393795943.svg",
     "index.html": "/BudgetMos/index.html",
     "main.e8d451ce.css.map": "/BudgetMos/static/css/main.e8d451ce.css.map",
-    "main.a3f14db9.js.map": "/BudgetMos/static/js/main.a3f14db9.js.map",
+    "main.23929418.js.map": "/BudgetMos/static/js/main.23929418.js.map",
     "787.28cb0dcd.chunk.js.map": "/BudgetMos/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8d451ce.css",
-    "static/js/main.a3f14db9.js"
+    "static/js/main.23929418.js"
   ]
 }
