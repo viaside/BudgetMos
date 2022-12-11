@@ -2,23 +2,32 @@ import React, { Component} from 'react';
 import MediaQuery from 'react-responsive'
 import Fade from 'react-reveal/Fade';
 import Carousel from 'react-elastic-carousel'
-import img1 from '../Images/img1.svg';
+import budg from '../Images/budget.svg';
 import med from '../Images/med.svg';
 import nac from '../Images/nacia.svg'
 import plan from '../Images/PLANNING.svg'
+import soc from '../Images/soc.svg'
+import stud from '../Images/stud.svg'
 
 const CarouselItems = [
     { id: 1, img: med, title: 'Здравоохранение', text: "381,6 млрд рублей" },
     { id: 2, img: nac, title: 'Национальная экономика', text: "1042,6 млрд рублей" },
-    { id: 3, img: img1, title: 'Социальная политика', text: "551,8 млрд рублей" },
-    { id: 4, img: img1, title: 'Образование', text: "479,7 млрд рублей" },
-    { id: 5, img: img1, title: 'Физическая культура и спорт', text: "68,0 млрд рублей" }
+    { id: 3, img: soc, title: 'Социальная политика', text: "551,8 млрд рублей" },
+    { id: 4, img: stud, title: 'Образование', text: "479,7 млрд рублей" },
+    { id: 5, img: budg, title: 'Физическая культура и спорт', text: "68,0 млрд рублей" }
 ];
 
 const AnimatedListItems = [
-    { id: 1, img: img1, title: 'БЮДЖЕТНАЯ КЛАССИФИКАЦИЯ', text: "Бюджетная классификация Российской Федерации является группировкой доходов, расходов и источников финансирования дефицитов бюджетов бюджетной системы Российской Федерации, используемой для составления и исполнения бюджетов, а также группировкой доходов, расходов и источников финансирования дефицитов бюджетов и (или) операций сектора государственного управления, используемой для ведения бюджетного (бухгалтерского) учета, составления бюджетной (бухгалтерской) и иной финансовой отчетности, обеспечивающей сопоставимость показателей бюджетов бюджетной системы Российской Федерации." },
-    { id: 2, img: plan, title: 'ПЛАНИРОВАНИЕ БЮДЖЕТА', text: (<>
-        <p>Решение о начале работы над  составлением  проекта  бюджета принимает Премьер Правительства Москвы   в   соответствии   с нормативными актами, определяющими  особенности  бюджетной  системы Российской Федерации в планируемом бюджетном году. <br/> Далее Правительство Москвы готовит проект бюджетного  послания  и представляет его Мэру Москвы. Бюджетное  послание  Мэра  Москвы  Московской  городской  Думе включает в себя: </p>
+    { id: 1, img: budg, title: 'БЮДЖЕТНАЯ КЛАССИФИКАЦИЯ', text: "Бюджетная классификация Российской Федерации является группировкой доходов, расходов и источников финансирования дефицитов бюджетов бюджетной системы Российской Федерации, используемой для составления и исполнения бюджетов, а также группировкой доходов, расходов и источников финансирования дефицитов бюджетов и (или) операций сектора государственного управления, используемой для ведения бюджетного (бухгалтерского) учета, составления бюджетной (бухгалтерской) и иной финансовой отчетности, обеспечивающей сопоставимость показателей бюджетов бюджетной системы Российской Федерации." },
+    { id: 2, img: plan, title: 'ПЛАНИРОВАНИЕ БЮДЖЕТА', text: (
+    <>
+        <p>
+            Решение о начале работы над  составлением  проекта  бюджета принимает Премьер Правительства Москвы   
+            в соответствии с нормативными актами, определяющими  особенности  бюджетной  системы Российской 
+            Федерации в планируемом бюджетном году. <br/> Далее Правительство Москвы готовит проект бюджетного  
+            послания  и представляет его Мэру Москвы. Бюджетное  послание  Мэра  Москвы  Московской  городской  
+            Думе включает в себя: 
+        </p>
         <ul>
             <li>оценку  исполнения  бюджета   предшествующего и текущего финансовых годов; </li>
             <li>прогноз   основных   показателей    социально-экономического положения Москвы в соответствующий период; </li>
@@ -26,14 +35,15 @@ const AnimatedListItems = [
             <li>сведения о прогнозируемых доходах бюджета Москвы; </li>
             <li>проект бюджета Москвы.</li>
         </ul>
-     </>)},
+    </>
+    )},
 ];
 
 const animateListDesktop = [
     { id: 1, Text:  
     <span>
     <div id='carousel'>
-        <h1 className='vam font-weight-bold display-1'>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТЫ</h1>
+        <h1 className='vam font-weight-bold display-1'>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТА</h1>
         <Carousel className="styling-example p-5" itemsToShow={1}>
             {CarouselItems.map((item, key) => (
                 <div className="Item" key={key}>
@@ -52,14 +62,14 @@ const animateListDesktop = [
         </div>
         <div className='p-5 desktop'>
             <h1 className='font-weight-bold display-1'>{ AnimatedListItems[0].title }</h1>
-            <p/>{ AnimatedListItems[0].text }<p/>
+            <div>{ AnimatedListItems[0].text }</div>
         </div>
     </span>, Bg: 'blue'},
         { id: 3, Text: 
             <span className='block d-flex'>
                 <div className='p-5 desktop'>
                     <h1 className='font-weight-bold display-1'>{ AnimatedListItems[1].title }</h1>
-                    <p/>{ AnimatedListItems[1].text }<p/>
+                    <div>{ AnimatedListItems[1].text }</div>
                 </div>
                 <div className="p-5">
                     <img src={ AnimatedListItems[1].img } alt="" height="355px" width="355px"/>
@@ -70,8 +80,8 @@ const animateListDesktop = [
 const animateListMobile = [
     { id: 1, Text:
     <span >
-    <div className='paddingLR'>
-        <h1 className='font-weight-bold vam'><b>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТЫ</b></h1>
+    <div className=''>
+        <h1 className='font-weight-bold vam display-1'><b>ОСНОВНЫЕ НАПРАВЛЕНИЯ БЮДЖЕТА</b></h1>
         <Carousel className="styling-example-mobile" itemsToShow={1}>
             {CarouselItems.map((item, key) => (
                 <div className="ItemMobile" key={key}>
@@ -90,7 +100,7 @@ const animateListMobile = [
         </div>
         <div className='mobile'>
             <h1 className='font-weight-bold display-1'>{ AnimatedListItems[0].title }</h1>
-            <p className='smallFont'>{ AnimatedListItems[0].text }</p>
+            <div className='smallFont'>{ AnimatedListItems[0].text }</div>
         </div>
     </span>, Bg: 'blue'},
     { id: 3, Text: 
@@ -100,7 +110,7 @@ const animateListMobile = [
             </div>
             <div className='mobile'>
                 <h1 className='font-weight-bold '>{ AnimatedListItems[1].title }</h1>
-                <p className='verySmallFont'>{ AnimatedListItems[1].text }</p>
+                <div className='verySmallFont'>{ AnimatedListItems[1].text }</div>
             </div>
         </span>, Bg: 'white'},
 ];

@@ -1,4 +1,4 @@
-import Test from "./components/Test";
+import Direction from "./components/Direction";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 
@@ -8,8 +8,8 @@ const AppRoutes = [
         element: <Home />
     },
     {
-        path: '/Test',
-        element: <Test />
+        path: '/Direction',
+        element: <Direction />
     },
     {
         path: '/Contact',

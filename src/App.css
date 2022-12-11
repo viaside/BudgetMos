@@ -43,10 +43,11 @@ html {
 body {
     height: 100%;
     margin: 0px 0px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'FreeMono', monospace ;
     font-size: 14px;
     background-color: #b8ccf1;
 }
+
 
 .rec.rec-arrow {
     border-radius: 40%;
@@ -84,36 +85,11 @@ body {
     box-shadow: 0 0 1px 3px rgb(153, 177, 243);
 }
 
-.modal-backdrop {
-    background-color: #393838;
-}
-.modal-content {
-    background: #1e1d23;
-}
-
-.bg-glass {
-    background-color: hsla(0, 0%, 100%, 0.9) !important;
-    backdrop-filter: saturate(200%) blur(25px);
-}
-
-
-.border-radius {
-    background-color: hsl(0, 0%, 0%, 0.7);
-    border-radius: 25px;
-    border:0;
-}
-
 .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.text-bg {
-    width: 100%;
-    height: 650px;
-    max-width: 100%;
 }
 
 @keyframes fadeInUp {
@@ -180,4 +156,195 @@ body {
 
 .mobile-c{
     font-size: 15px;
+}
+
+.pad {
+    padding-top: 10%;
+    background-image: url("./Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+}
+
+.pad-contact{
+    padding-top: 500px;
+    background-image: url("./Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.pad-contact-mobile{
+    padding-top: 300px;
+    background-image: url("./Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+.padMob{
+    padding-top: 350px;
+    background-image: url("./Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 975px;  
+}
+.padMob2{
+    padding-top: 150px;
+    background-image: url("./Images/DesktopBg.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 975px;  
+}
+
+.text-main{
+    color: rgb(142, 157, 231);
+    text-decoration: none;
+}
+
+.white{
+    background-color: white;
+    color: rgb(142, 157, 231);
+}   
+
+.blue{
+    background-color: rgb(142, 157, 231);
+    color: white;
+}
+
+.block{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+.blockMobile{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.desktop {
+    font-size: 25px;
+}
+
+.mobile {
+    font-size: 20px;
+}
+
+.border{
+    border: 0px;
+    border-radius: 0px;
+    border-style:solid;
+}
+
+.bord1{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(142, 157, 231);
+    color: white;
+}
+
+.bord1:hover{
+    color: whitesmoke;
+}
+.bord2{
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(142, 157, 231);
+    background-color: white;
+}
+
+.bord2:hover{
+    color: rgb(142, 157, 231);
+    
+}
+
+.Item{
+    max-height: 500px;
+}
+
+.ItemMobile{
+    max-height: 500px;
+}
+
+.Item img{
+    width: 350px;
+    height: 350px;
+}
+
+.ItemMobile img{
+    width: 250px;
+    height: 250px;
+}
+
+.Item p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.ItemMobile p{
+    text-align: center;
+    font-size: 24px;
+}
+
+.Item b{
+    text-align: center;
+    font-size: 35px;
+}
+
+.styling-example-mobile{
+    min-width: 400px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.vam{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.paddingLR{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.smallFont{
+    font-size: 18px;
+}
+.verySmallFont{
+    font-size: 15px;
+}
+
+.jumbotron  {
+    padding: 51px;
+}
+
+.vrt{
+    padding: 0;
+    margin: 0;
+}
+
+.apexcharts-tooltip {
+    background: #679dcf;
+    color: rgb(17, 12, 2);
+  }
+
+.donut{
+    margin-left: auto;
+    margin-right: auto;
 }
