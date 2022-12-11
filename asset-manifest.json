@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BudgetMos/static/css/main.8e52bb17.css",
-    "main.js": "/BudgetMos/static/js/main.39113f12.js",
+    "main.js": "/BudgetMos/static/js/main.1197ad6e.js",
     "static/js/787.28cb0dcd.chunk.js": "/BudgetMos/static/js/787.28cb0dcd.chunk.js",
     "static/media/stud.svg": "/BudgetMos/static/media/stud.63b3237980e1cf0680eaafb769c1af90.svg",
     "static/media/budget.svg": "/BudgetMos/static/media/budget.56a6c7f140a1dfe04e316073cddb61a1.svg",
@@ -12,11 +12,11 @@
     "static/media/soc.svg": "/BudgetMos/static/media/soc.8e554ef98a85da5813fc383393795943.svg",
     "index.html": "/BudgetMos/index.html",
     "main.8e52bb17.css.map": "/BudgetMos/static/css/main.8e52bb17.css.map",
-    "main.39113f12.js.map": "/BudgetMos/static/js/main.39113f12.js.map",
+    "main.1197ad6e.js.map": "/BudgetMos/static/js/main.1197ad6e.js.map",
     "787.28cb0dcd.chunk.js.map": "/BudgetMos/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e52bb17.css",
-    "static/js/main.39113f12.js"
+    "static/js/main.1197ad6e.js"
   ]
 }
