@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/BudgetMos/static/css/main.8e52bb17.css",
-    "main.js": "/BudgetMos/static/js/main.1197ad6e.js",
+    "main.css": "/BudgetMos/static/css/main.7d774a8f.css",
+    "main.js": "/BudgetMos/static/js/main.683d16de.js",
     "static/js/787.28cb0dcd.chunk.js": "/BudgetMos/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sport.svg": "/BudgetMos/static/media/sport.67d5998121a970733eeb4cb844995327.svg",
     "static/media/stud.svg": "/BudgetMos/static/media/stud.63b3237980e1cf0680eaafb769c1af90.svg",
     "static/media/budget.svg": "/BudgetMos/static/media/budget.56a6c7f140a1dfe04e316073cddb61a1.svg",
     "static/media/DesktopBg.svg": "/BudgetMos/static/media/DesktopBg.55037e42287b2734d72f.svg",
     "static/media/PLANNING.svg": "/BudgetMos/static/media/PLANNING.c941f4ab8f61954756e635afc6e4aa6f.svg",
+    "static/media/soc.svg": "/BudgetMos/static/media/soc.c95925ad0591169a9d7b4cbe6f34bc80.svg",
     "static/media/med.svg": "/BudgetMos/static/media/med.5574e821ddfb559f8be8a6352fab24aa.svg",
     "static/media/nacia.svg": "/BudgetMos/static/media/nacia.225bf6bc225e2f7398f747656153c338.svg",
-    "static/media/soc.svg": "/BudgetMos/static/media/soc.8e554ef98a85da5813fc383393795943.svg",
     "index.html": "/BudgetMos/index.html",
-    "main.8e52bb17.css.map": "/BudgetMos/static/css/main.8e52bb17.css.map",
-    "main.1197ad6e.js.map": "/BudgetMos/static/js/main.1197ad6e.js.map",
+    "main.7d774a8f.css.map": "/BudgetMos/static/css/main.7d774a8f.css.map",
+    "main.683d16de.js.map": "/BudgetMos/static/js/main.683d16de.js.map",
     "787.28cb0dcd.chunk.js.map": "/BudgetMos/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e52bb17.css",
-    "static/js/main.1197ad6e.js"
+    "static/css/main.7d774a8f.css",
+    "static/js/main.683d16de.js"
   ]
 }
