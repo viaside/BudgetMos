@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/BudgetMos/static/css/main.cc7815a0.css",
-    "main.js": "/BudgetMos/static/js/main.fccb94b6.js",
-    "static/css/386.7ac75391.chunk.css": "/BudgetMos/static/css/386.7ac75391.chunk.css",
+    "main.js": "/BudgetMos/static/js/main.e00ed143.js",
+    "static/css/386.586d844c.chunk.css": "/BudgetMos/static/css/386.586d844c.chunk.css",
     "static/js/386.cecd3655.chunk.js": "/BudgetMos/static/js/386.cecd3655.chunk.js",
-    "static/css/982.85ff8677.chunk.css": "/BudgetMos/static/css/982.85ff8677.chunk.css",
+    "static/css/982.9eaae041.chunk.css": "/BudgetMos/static/css/982.9eaae041.chunk.css",
     "static/js/982.543838fc.chunk.js": "/BudgetMos/static/js/982.543838fc.chunk.js",
     "static/media/sport.svg": "/BudgetMos/static/media/sport.67d5998121a970733eeb4cb844995327.svg",
     "static/media/stud.svg": "/BudgetMos/static/media/stud.63b3237980e1cf0680eaafb769c1af90.svg",
@@ -12,18 +12,19 @@
     "static/media/DesktopBg.svg": "/BudgetMos/static/media/DesktopBg.55037e42287b2734d72f.svg",
     "static/media/plan.svg": "/BudgetMos/static/media/plan.c941f4ab8f61954756e635afc6e4aa6f.svg",
     "static/media/soc.svg": "/BudgetMos/static/media/soc.c95925ad0591169a9d7b4cbe6f34bc80.svg",
+    "static/media/logo.svg": "/BudgetMos/static/media/logo.26d4bf00c24f55c262514a4aaa29b3d2.svg",
     "static/media/med.svg": "/BudgetMos/static/media/med.5574e821ddfb559f8be8a6352fab24aa.svg",
     "static/media/nacia.svg": "/BudgetMos/static/media/nacia.225bf6bc225e2f7398f747656153c338.svg",
     "index.html": "/BudgetMos/index.html",
     "main.cc7815a0.css.map": "/BudgetMos/static/css/main.cc7815a0.css.map",
-    "main.fccb94b6.js.map": "/BudgetMos/static/js/main.fccb94b6.js.map",
-    "386.7ac75391.chunk.css.map": "/BudgetMos/static/css/386.7ac75391.chunk.css.map",
+    "main.e00ed143.js.map": "/BudgetMos/static/js/main.e00ed143.js.map",
+    "386.586d844c.chunk.css.map": "/BudgetMos/static/css/386.586d844c.chunk.css.map",
     "386.cecd3655.chunk.js.map": "/BudgetMos/static/js/386.cecd3655.chunk.js.map",
-    "982.85ff8677.chunk.css.map": "/BudgetMos/static/css/982.85ff8677.chunk.css.map",
+    "982.9eaae041.chunk.css.map": "/BudgetMos/static/css/982.9eaae041.chunk.css.map",
     "982.543838fc.chunk.js.map": "/BudgetMos/static/js/982.543838fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc7815a0.css",
-    "static/js/main.fccb94b6.js"
+    "static/js/main.e00ed143.js"
   ]
 }
