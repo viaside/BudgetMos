@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BudgetMos/static/css/main.cc7815a0.css",
-    "main.js": "/BudgetMos/static/js/main.d5f29b93.js",
+    "main.js": "/BudgetMos/static/js/main.fccb94b6.js",
     "static/css/386.7ac75391.chunk.css": "/BudgetMos/static/css/386.7ac75391.chunk.css",
     "static/js/386.cecd3655.chunk.js": "/BudgetMos/static/js/386.cecd3655.chunk.js",
     "static/css/982.85ff8677.chunk.css": "/BudgetMos/static/css/982.85ff8677.chunk.css",
@@ -16,7 +16,7 @@
     "static/media/nacia.svg": "/BudgetMos/static/media/nacia.225bf6bc225e2f7398f747656153c338.svg",
     "index.html": "/BudgetMos/index.html",
     "main.cc7815a0.css.map": "/BudgetMos/static/css/main.cc7815a0.css.map",
-    "main.d5f29b93.js.map": "/BudgetMos/static/js/main.d5f29b93.js.map",
+    "main.fccb94b6.js.map": "/BudgetMos/static/js/main.fccb94b6.js.map",
     "386.7ac75391.chunk.css.map": "/BudgetMos/static/css/386.7ac75391.chunk.css.map",
     "386.cecd3655.chunk.js.map": "/BudgetMos/static/js/386.cecd3655.chunk.js.map",
     "982.85ff8677.chunk.css.map": "/BudgetMos/static/css/982.85ff8677.chunk.css.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.cc7815a0.css",
-    "static/js/main.d5f29b93.js"
+    "static/js/main.fccb94b6.js"
   ]
 }
